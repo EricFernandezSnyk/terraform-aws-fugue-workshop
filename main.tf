@@ -21,12 +21,19 @@ resource "random_id" "server" {
   byte_length = 8
 }
 
+# Create an IAM profile for the EC2 based on an existing role
+resource "aws_iam_instance_profile" "server" {
+  name = "EC2Server"
+  role = "EC2Workshop"
+}
+
 # Create EC2 instance to be monitored by Fugue
 resource "aws_instance" "server" {
   ami           = "ami-830c94e3"
   instance_type = "t2.micro"
-
+  #iam_instance_profile = "${aws_iam_instance_profile.server.name}" # Uncomment to fix vulnerability
   tags = {
     Name = "ExampleFugueInstance-${random_id.server.hex}"
   }
 }
+
