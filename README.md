@@ -2,7 +2,7 @@
 
 ## Requirements
 
-1. Have an AWS Account with access to ```us-west-2```
+1. Have a Snyk AWS Account with access to ```us-west-2```
 2. Create a free Fugue account <https://www.fugue.co/>
     - Use your Snyk email
 3. Install and configure AWS CLI:
@@ -21,7 +21,7 @@
 ## Step by step guide
 
 1. Clone this repository ```git clone https://github.com/EricFernandezSnyk/terraform-aws-fugue-workshop.git```
-2. Naviage to the repository ```cd terraform-aws-fugue-workshop```
+2. Navigate to the repository ```cd terraform-aws-fugue-workshop```
 3. Run ```terraform init```
     - **Optional**: Change the EC2 Name tag to your name
 4. Run ```terraform plan```
