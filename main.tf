@@ -23,7 +23,7 @@ resource "random_id" "server" {
 
 # Create an IAM profile for the EC2 based on an existing role
 resource "aws_iam_instance_profile" "server" {
-  name = "EC2Server"
+  name = "EC2Server-${random_id.server.hex}"
   role = "EC2Workshop"
 }
 
