@@ -2,7 +2,7 @@
 
 ## Requirements
 
-1. Have an AWS Account with access to ```us-west-2```
+1. Have a Snyk AWS Account with access to ```us-west-2```
 2. Create a free Fugue account <https://www.fugue.co/>
     - Use your Snyk email
 3. Install and configure AWS CLI:
