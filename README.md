@@ -35,7 +35,6 @@
 12. Snyk peek of what is coming :grin:
 13. Extra time:
     - Fixing vulnerability [FG_R00253](https://riskmanager.fugue.co/rules/rules/list?query=%5B%22id%3AFG_R00253%22%5D)
-    - **Question time!**
     - Uncomment line 34 in ```main.tf```
     - Run ```terraform plan```
     - Run ```terraform apply```
