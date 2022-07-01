@@ -25,7 +25,7 @@
 2. Navigate to the repository ```cd terraform-aws-fugue-workshop```
 3. Run ```terraform init```
     - **Optional**: Change the EC2 Name tag to your name
-4. Run ```terraform plan```
+4. Run ```terraform plan``` (the output should summarise `Plan: 3 to add, 0 to change, 0 to destroy`)
 5. Run ```terraform apply```
 6. **Question time!**
 7. Login to [AWS](https://aws.amazon.com/console/)
@@ -45,4 +45,5 @@
     - Run ```terraform apply```
     - Open [Fugue](https://riskmanager.fugue.co/environments/ae93aed4-06b3-4268-943f-e047994b1beb/compliance/resources?query=%5B%22resource_types%3AAWS.EC2.Instance%22%2C%22regions%3Aus-west-2%22%5D)
     - Verify that you fixed the vulnerability
-17. We are done!
+17. Run ```terraform destroy``` (the output should summarise `Plan: 0 to add, 0 to change, 3 to destroy`)
+18. We are done!
