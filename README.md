@@ -27,17 +27,21 @@
 4. Run ```terraform plan```
 5. Run ```terraform apply```
 6. **Question time!**
-7. Visualize your EC2 Machine in the [AWS UI](https://us-west-2.console.aws.amazon.com/ec2/v2/home?region=us-west-2#Instances:instanceState=running)
-8. **Question time!**
-9. Login to [Fugue](https://www.fugue.co)
-10. Go to this view of [Fugue](https://riskmanager.fugue.co/environments/ae93aed4-06b3-4268-943f-e047994b1beb/compliance/resources?query=%5B%22resource_types%3AAWS.EC2.Instance%22%2C%22regions%3Aus-west-2%22%5D) to find all EC2 instances in ```us-west-2```. Find your instance!
-11. **Question time!**
-12. Snyk peek of what is coming :grin:
-13. Extra time:
+7. Login to [AWS](https://aws.amazon.com/console/)
+8. Navigate to EC2 and make sure your region is set to us-west-2
+    - Alternatively, follow this link to [EC2 us-west-2](https://us-west-2.console.aws.amazon.com/ec2/v2/home?region=us-west-2#Instances:instanceState=running)
+9. Find your EC2 instance with your unique ID and click on it
+10. **Question time!**
+11. Login to [Fugue](https://www.fugue.co)
+12. Go to this view of [Fugue](https://riskmanager.fugue.co/environments/ae93aed4-06b3-4268-943f-e047994b1beb/compliance/resources?query=%5B%22resource_types%3AAWS.EC2.Instance%22%2C%22regions%3Aus-west-2%22%5D) to find all EC2 instances in ```us-west-2```. 
+13. Find your instance and click on it!
+14. **Question time!**
+15. Snyk peek of what is coming :grin:
+16. Extra time:
     - Fixing vulnerability [FG_R00253](https://riskmanager.fugue.co/rules/rules/list?query=%5B%22id%3AFG_R00253%22%5D)
     - Uncomment line 34 in ```main.tf```
     - Run ```terraform plan```
     - Run ```terraform apply```
     - Open [Fugue](https://riskmanager.fugue.co/environments/ae93aed4-06b3-4268-943f-e047994b1beb/compliance/resources?query=%5B%22resource_types%3AAWS.EC2.Instance%22%2C%22regions%3Aus-west-2%22%5D)
     - Verify that you fixed the vulnerability
-14. We are done!
+17. We are done!
