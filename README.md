@@ -12,7 +12,8 @@
     - Test with ```aws s3 ls```
 4. Install and configure Terraform:
     - Install Terraform - Mac download link:
-        - [Direct link](https://releases.hashicorp.com/terraform/1.2.3/terraform_1.2.3_darwin_amd64.zip)
+        - [Direct link Intel](https://releases.hashicorp.com/terraform/1.2.3/terraform_1.2.3_darwin_amd64.zip)
+        - [Direct link ARM](https://releases.hashicorp.com/terraform/1.2.4/terraform_1.2.4_darwin_arm64.zip)
         - Using Brew
             - ```brew tap hashicorp/tap```
             - ```brew install hashicorp/tap/terraform```
